@@ -1,13 +1,11 @@
-/* Reset default styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100vh;
-    overflow: hidden; /* Might remove for mobile scrolling */
+    overflow: hidden;
 }
 
-/* Container for two columns */
 .container {
     display: flex;
     height: 100vh;
@@ -15,7 +13,6 @@ body {
     flex-direction: row;
 }
 
-/* Left Column */
 .left-column {
     width: 50%;
     background-color: white;
@@ -30,7 +27,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     padding: 10px 0;
 }
@@ -39,7 +35,6 @@ header .logo {
     height: auto;
 }
 
-/* Main content */
 main {
     padding: 20px 0;
     flex-grow: 1;
@@ -51,7 +46,6 @@ section {
     margin-bottom: 100px;
 }
 
-/* Tenant Logos */
 .tenant-logos {
     display: flex;
     justify-content: center;
@@ -74,14 +68,10 @@ section {
     transform: scale(1.1);
 }
 
-/* Footer */
 footer {
     padding: 10px 0;
     color: black;
     margin-top: auto;
-}
-footer h3 {
-    margin: 0 0 10px 0;
 }
 footer p {
     margin: 5px 0;
@@ -94,14 +84,12 @@ footer a:hover {
     color: #003366;
 }
 
-/* Right Column */
 .right-column {
     width: 50%;
     position: relative;
     overflow: hidden;
 }
 
-/* Slideshow */
 .slideshow {
     width: 100%;
     height: 100%;
@@ -115,14 +103,14 @@ footer a:hover {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    animation: slide 15s infinite;
+    animation: slide 24s infinite;
 }
 .slideshow img:nth-child(1) { animation-delay: 0s; }
-.slideshow img:nth-child(2) { animation-delay: 3s; }
-.slideshow img:nth-child(3) { animation-delay: 6s; }
-.slideshow img:nth-child(4) { animation-delay: 9s; }
-.slideshow img:nth-child(5) { animation-delay: 12s; } /* Note: No 5th/6th image in HTML yet */
-.slideshow img:nth-child(6) { animation-delay: 15s; }
+.slideshow img:nth-child(2) { animation-delay: 6s; }
+.slideshow img:nth-child(3) { animation-delay: 12s; }
+.slideshow img:nth-child(4) { animation-delay: 18s; }
+.slideshow img:nth-child(5) { animation-delay: 24s; }
+.slideshow img:nth-child(6) { animation-delay: 30s; }
 
 @keyframes slide {
     0% { opacity: 0; }
@@ -131,53 +119,48 @@ footer a:hover {
     100% { opacity: 0; }
 }
 
-/* Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
     body {
-        height: auto; /* Allow scrolling on mobile */
-        overflow-y: auto; /* Enable vertical scrolling */
+        height: auto;
+        overflow-y: auto;
     }
 
     .container {
-        flex-direction: column; /* Stack columns vertically */
-        height: auto; /* Remove fixed height */
-        width: 100%; /* Full width */
+        flex-direction: column;
+        height: auto;
+        width: 100%;
     }
 
     .left-column {
-        width: 100%; /* Full width on mobile */
-        min-height: auto; /* Remove fixed height */
-        padding: 10px; /* Reduce padding */
+        width: 100%;
+        min-height: auto;
+        padding: 10px;
     }
 
     .right-column {
-        width: 100%; /* Full width on mobile */
-        height: 50vh; /* Limit slideshow height */
-        order: -1; /* Move slideshow to top */
+        width: 100%;
+        height: 50vh;
+        order: -1;
     }
 
     header .logo {
-        max-width: 180px; /* Reduce logo size by ~30% from 260px */
+        max-width: 180px;
     }
 
     section {
-        margin-bottom: 40px; /* Reduce spacing for mobile */
+        margin-bottom: 40px;
     }
 
     .tenant-logos img {
-        max-width: 100px; /* Smaller logos */
+        max-width: 100px;
         max-height: 70px;
     }
 
     footer {
-        padding: 15px 0; /* Slightly more padding for touch */
-    }
-
-    footer h3 {
-        font-size: 1.2em; /* Slightly smaller heading */
+        padding: 15px 0;
     }
 
     footer p {
-        font-size: 0.9em; /* Readable text size */
+        font-size: 0.9em;
     }
 }
