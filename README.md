@@ -1,1 +1,1 @@
-Building a one page site to advertise a neighborhood shopping center.
+A one page site to advertise a neighborhood shopping center.
