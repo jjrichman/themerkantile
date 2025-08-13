@@ -1,1 +1,1 @@
-A one page site to advertise a neighborhood shopping center.
+Informational page advertising a neighborhood shopping center.
