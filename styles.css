@@ -116,7 +116,13 @@ footer .footer-logo {
 .slideshow img:nth-child(4) { animation-delay: 18s; }
 .slideshow img:nth-child(5) { animation-delay: 24s; }
 .slideshow img:nth-child(6) { animation-delay: 30s; }
-
+@keyframes slide {
+    0%    { opacity: 0; }
+    5.5%  { opacity: 1; }
+    11%   { opacity: 1; }
+    16.5% { opacity: 0; }
+    100%  { opacity: 0; }
+}
 .map-iframe {
     width: 60%;
     height: 300px;
