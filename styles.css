@@ -72,8 +72,8 @@ section {
     align-items: center;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: #000000;
-    text-decoration: none;
+    color: #0066cc;
+    text-decoration: underline;
     max-width: 150px;
     text-align: center;
     font-size: 1em;
