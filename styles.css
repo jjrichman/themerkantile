@@ -70,7 +70,7 @@ section {
 .loft-link {
     display: flex;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
